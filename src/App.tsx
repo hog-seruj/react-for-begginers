@@ -4,6 +4,7 @@ import data from './data.json';
 import Contacts from './Contacts/Contacts';
 import { useState } from 'react';
 import GameShip from './Game-ship/game-ship';
+import { Dashboard } from './Dashboard/Dashboard';
 
 const App = () => {
   const [state, setState] = useState({ isAdmin: false, userName: 'John' });
@@ -22,6 +23,7 @@ const App = () => {
         contacts={data.contacts}
       />
       <GameShip />
+      <Dashboard />
       <Footer copyright={data.copyright} />
     </div>
   );
